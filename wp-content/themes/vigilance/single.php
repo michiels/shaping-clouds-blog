@@ -20,6 +20,8 @@
 			</div><!--end post footer-->
 		</div><!--end post-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+
+		<?php wp_ffcomments(); ?>
 		<?php comments_template('', true); ?>
 		<?php else : ?>
 		<?php endif; ?>
